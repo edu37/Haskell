@@ -18,7 +18,7 @@
         ex: maior, igual ou menor que 3
 -}
 {- takeWhile -> para utilizat takeWhile, passa um predicado* e uma lista: takeWhile p xs
-                quando o predicado não estiver sendo satisfeito, a função para
+                quando o predicado não estiver sendo satisfeito, a função vai parar
         ex: ghci> takeWhile (/=' ') "elefantes é que sabem fazer festa"
             "elefantes"
 -}
