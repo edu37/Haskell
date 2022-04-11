@@ -68,3 +68,12 @@ sequencia x
            lista passada pela função que tem a sequencia de Collatz maior do que 15 -}
 calculo :: Int -> [Int] -> Int        
 calculo n = length . filter (>n) . map length . map sequencia
+
+elem' :: (Eq a) => a -> [a] -> Bool  
+elem' y ys = foldl (\acc x -> if x == y then True else acc) False ys
+
+head' :: [a] -> a  
+head' = foldl1 (\x _ -> x) 
+
+last' :: [a] -> a  
+last' = foldr1 (\_ x -> x) 
