@@ -77,3 +77,8 @@ head' = foldl1 (\x _ -> x)
 
 last' :: [a] -> a  
 last' = foldr1 (\_ x -> x) 
+
+
+_soma xs = map aux xs
+    where
+        aux x = 1
